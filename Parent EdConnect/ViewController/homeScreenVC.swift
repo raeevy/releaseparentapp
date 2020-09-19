@@ -1,17 +1,13 @@
-//
-//  homeScreenVC.swift
-//  Parent EdConnect
-//
-//  Created by Work on 10/06/20.
-//  Copyright © 2020 BlueAppleTechnologiesPvtLtd. All rights reserved.
-//
+//homeScreenVC.swift
+//Parent EdConnect
+//Created by Work on 10/06/20.
+//Copyright © 2020 BlueAppleTechnologiesPvtLtd. All rights reserved.
 
 import UIKit
 import Alamofire
 import SDWebImage
 
 var curveEaseIn = UIView.AnimationOptions()
-
 class homeScreenVC: UIViewController, UITableViewDataSource, UITableViewDelegate, UIGestureRecognizerDelegate, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout  {
     
     //Mark:- ********_Array_&_Vriables_********
@@ -31,7 +27,6 @@ class homeScreenVC: UIViewController, UITableViewDataSource, UITableViewDelegate
     var lastActive = UserDefaults.standard.value(forKey: "LASTACTIVE")
     let arrayUserDef =  UserDefaults.standard.array(forKey: "ARRCHILD")
     var profilPic = UserDefaults.standard.value(forKey: "PROFILEPIC")
-   
     
     var selectedSchoolId:String?
     var selectedSection:String?
@@ -122,6 +117,10 @@ class homeScreenVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         tap.delegate = self // This is not required
         backgroundView.addGestureRecognizer(tap)
+        
+        viewWeeklyTestReport.isHidden = true
+        viewArechiveDashboard.isHidden = true
+        viewCandATest.isHidden = true
         
       
     }
@@ -634,62 +633,66 @@ extension homeScreenVC {
                                 print("arrBlooms is",arrBlooms)
                                 print("arrBlooms count is",arrBlooms.count)
                                 
-                                if arrBlooms.count != 0 {
-
-                                    for (index, element) in arrBlooms.enumerated() {
-                                    
-                                    let dataDict = arrBlooms.object(at: index) as? NSDictionary ?? [:]
-                                    
-                                    let categoryName = dataDict.value(forKey: "category_name") as? String ?? ""
-                                        
-                                        let totalQues = dataDict.value(forKey: "total_questions") as? Int ?? 0
-                                        let correctAns = dataDict.value(forKey: "correct_ans") as? Int ?? 0
-                                        
-                                        
-                                        self.lblBloom1.text = "\(correctAns)"
-                                        self.lblBloomTotal1.text = "\(totalQues)"
-                                        
-                                        self.lblBloom2.text = "\(correctAns)"
-                                        self.lblBloomTotal2.text = "\(totalQues)"
-                                        
-                                        self.lblBloom3.text = "\(correctAns)"
-                                        self.lblBloomTotal3.text = "\(totalQues)"
-                                        
-                                        self.lblBloom4.text = "\(correctAns)"
-                                        self.lblBloomTotal4.text = "\(totalQues)"
-
-                                        self.lblBloom5.text = "\(correctAns)"
-                                        self.lblBloomTotal5.text = "\(totalQues)"
-
-                                        self.lblBloom6.text = "\(correctAns)"
-                                        self.lblBloomTotal6.text = "\(totalQues)"
-                                        
-                                        print("the category Name is",categoryName)
-                                        print("totalQues is", totalQues)
-                                        print("correctAns is", correctAns)
-                                        
-                                    }
-                                }
+                                
+                                self.lblBloom1.text = ""
+                                self.lblBloomTotal1.text = ""
+                                self.lblBloom2.text = ""
+                                self.lblBloomTotal2.text = ""
+                                self.lblBloom3.text = ""
+                                self.lblBloomTotal3.text = ""
                                 self.lblBloom4.text = ""
                                 self.lblBloomTotal4.text = ""
                                 self.lblBloom5.text = ""
                                 self.lblBloomTotal5.text = ""
                                 self.lblBloom6.text = ""
                                 self.lblBloomTotal6.text = ""
-                                
-//                                "category_name": "Analysing",
-//                                "total_questions": 11,
-//                                "correct_ans": 5,
-//                                "wrong_ans": 6,
-//                                "skipped": 0
-                                               
-//                                0-Evaluating,
-//                                1-Analysing,
-//                                2-Knowledge & understanding,
-//                                3-Skills & Application
-//                                4- Understanding,
-//                                5-Applying,
-//                                6-Remembering
+                                if arrBlooms.count != 0 {
+                                    var indx = 0
+                                    for x in arrBlooms{
+                                        indx += 1
+                                        let dataDict = x as? NSDictionary ?? [:]
+                                        
+                                        let categoryName = dataDict.value(forKey: "category_name") as? String ?? ""
+                                        
+                                        let totalQues = dataDict.value(forKey: "total_questions") as? Int ?? 0
+                                        let correctAns = dataDict.value(forKey: "correct_ans") as? Int ?? 0
+                                        
+                                        if indx == 1{
+                                            self.lblBloom1.text = "\(correctAns)"
+                                            self.lblBloomTotal1.text = "\(totalQues)"
+                                        }
+                                        if indx == 2{
+                                            self.lblBloom2.text = "\(correctAns)"
+                                            self.lblBloomTotal2.text = "\(totalQues)"
+                                        }
+                                        
+                                        if indx == 3{
+                                            self.lblBloom3.text = "\(correctAns)"
+                                            self.lblBloomTotal3.text = "\(totalQues)"
+                                        }
+                                        
+                                        if indx == 4{
+                                            self.lblBloom4.text = "\(correctAns)"
+                                            self.lblBloomTotal4.text = "\(totalQues)"
+                                            
+                                        }
+                                        if indx == 5{
+                                            self.lblBloom5.text = "\(correctAns)"
+                                            self.lblBloomTotal5.text = "\(totalQues)"
+                                            
+                                        }
+                                        if indx == 6{
+                                            self.lblBloom6.text = "\(correctAns)"
+                                            self.lblBloomTotal6.text = "\(totalQues)"
+                                            
+                                        }
+                                        
+                                        print("the category Name is",categoryName)
+                                        print("totalQues is", totalQues)
+                                        print("correctAns is", correctAns)
+                                        
+                                    }
+                               }
                                 
                                 self.collectionView.reloadData()
                             }

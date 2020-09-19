@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (5.2.1)
+  - Cosmos (22.1.0)
+  - FSCalendar (2.8.1)
+  - Highcharts (8.1.2)
+  - IQKeyboardManagerSwift (6.5.5)
+  - SDWebImage (5.8.0):
+    - SDWebImage/Core (= 5.8.0)
+  - SDWebImage/Core (5.8.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - Cosmos
+  - FSCalendar
+  - Highcharts (~> 8.1.2)
+  - IQKeyboardManagerSwift
+  - SDWebImage (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Cosmos
+    - FSCalendar
+    - Highcharts
+    - IQKeyboardManagerSwift
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  Cosmos: 2795b36ad4bbea1af3050d6d65576ed63875f86a
+  FSCalendar: 5245140456fcbcac5824c203b98bd8068bdfee1a
+  Highcharts: 795b5359af23d5af26da7529056da6a0f3e4d47f
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  SDWebImage: 84000f962cbfa70c07f19d2234cbfcf5d779b5dc
+
+PODFILE CHECKSUM: 57278f971faf2c28e8d88c01263aa398e819e0e1
+
+COCOAPODS: 1.9.3

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashBckgrnd" translatesAutoresizingMaskIntoConstraints="NO" id="UML-WB-6O0">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splachIcon" translatesAutoresizingMaskIntoConstraints="NO" id="BnV-cc-OpL">
+                                <rect key="frame" x="37" y="185" width="340" height="247"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="247" id="D1r-bn-1wO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extramarks- The ParentEd Connect" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="YKv-mZ-Ceg">
+                                <rect key="frame" x="25" y="433" width="364" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="Zqj-yh-rBg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version: 1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANs-6Z-TTI">
+                                <rect key="frame" x="134" y="796" width="146" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Ql5-OY-62l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BnV-cc-OpL" secondAttribute="trailing" constant="37" id="0m4-3I-IcP"/>
+                            <constraint firstItem="BnV-cc-OpL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="141" id="1X7-JL-REl"/>
+                            <constraint firstItem="UML-WB-6O0" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="C7I-Tn-Z1s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YKv-mZ-Ceg" secondAttribute="trailing" constant="25" id="CZw-eh-uUL"/>
+                            <constraint firstItem="ANs-6Z-TTI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="134" id="FM9-99-K0M"/>
+                            <constraint firstAttribute="trailing" secondItem="UML-WB-6O0" secondAttribute="trailing" id="TZP-Ow-T3Q"/>
+                            <constraint firstItem="YKv-mZ-Ceg" firstAttribute="top" secondItem="BnV-cc-OpL" secondAttribute="bottom" constant="1" id="aFe-fa-bq2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ANs-6Z-TTI" secondAttribute="bottom" constant="45" id="kDh-qk-5MQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ANs-6Z-TTI" secondAttribute="trailing" constant="134" id="mZx-XG-dds"/>
+                            <constraint firstItem="YKv-mZ-Ceg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="nIF-Sy-bsN"/>
+                            <constraint firstItem="BnV-cc-OpL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="sHf-vu-m1I"/>
+                            <constraint firstItem="UML-WB-6O0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vyD-0i-4sL"/>
+                            <constraint firstItem="UML-WB-6O0" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="zX7-1D-T5c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splachIcon" width="350" height="248"/>
+        <image name="splashBckgrnd" width="640" height="1136"/>
+    </resources>
+</document>

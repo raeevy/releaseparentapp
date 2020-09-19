@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="76" id="KGk-i7-Jjw" customClass="SubjectWPChapterWiseSubXIBTVC" customModule="Parent_EdConnect" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="305" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="305" height="76"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ajg-GL-3Iw">
+                        <rect key="frame" x="0.0" y="0.0" width="305" height="76"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LIH-Bg-iYs">
+                                <rect key="frame" x="15" y="37" width="230" height="2.5"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.1475257874" green="0.3717715144" blue="0.76871150730000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="BBw-Ir-s2j">
+                                <rect key="frame" x="15" y="56" width="230" height="2.5"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.95232743019999999" green="0.58357578519999997" blue="0.27945977449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="65" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLB-fp-TnA">
+                                <rect key="frame" x="255" y="30" width="35" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="HIz-3v-bql"/>
+                                    <constraint firstAttribute="height" constant="16" id="mpK-cI-dfa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hky-tj-1J2">
+                                <rect key="frame" x="255" y="50" width="35" height="14.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="wrW-FK-gLd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chemical Reactions and Equations" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YdQ-g6-dYo">
+                                <rect key="frame" x="15" y="7" width="195" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="v0u-to-c46"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hky-tj-1J2" firstAttribute="top" secondItem="yLB-fp-TnA" secondAttribute="bottom" constant="4" id="1zh-Nb-0bS"/>
+                            <constraint firstItem="BBw-Ir-s2j" firstAttribute="top" secondItem="LIH-Bg-iYs" secondAttribute="bottom" constant="17.333333333333332" id="3zB-MU-rPG"/>
+                            <constraint firstItem="LIH-Bg-iYs" firstAttribute="centerY" secondItem="yLB-fp-TnA" secondAttribute="centerY" id="8bK-uc-8E5"/>
+                            <constraint firstItem="LIH-Bg-iYs" firstAttribute="leading" secondItem="YdQ-g6-dYo" secondAttribute="leading" id="AaP-jL-mLi"/>
+                            <constraint firstItem="YdQ-g6-dYo" firstAttribute="top" secondItem="Ajg-GL-3Iw" secondAttribute="top" constant="7" id="Fs6-UH-EeY"/>
+                            <constraint firstAttribute="trailing" secondItem="hky-tj-1J2" secondAttribute="trailing" constant="15" id="KlG-tI-o0A"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="YdQ-g6-dYo" secondAttribute="bottom" constant="52" id="T1W-7X-dbC"/>
+                            <constraint firstItem="YdQ-g6-dYo" firstAttribute="leading" secondItem="Ajg-GL-3Iw" secondAttribute="leading" constant="15" id="jTl-Fj-ZwH"/>
+                            <constraint firstAttribute="trailing" secondItem="yLB-fp-TnA" secondAttribute="trailing" constant="15" id="lvZ-8X-gSn"/>
+                            <constraint firstItem="LIH-Bg-iYs" firstAttribute="trailing" secondItem="BBw-Ir-s2j" secondAttribute="trailing" id="r50-Kd-sKu"/>
+                            <constraint firstAttribute="trailing" secondItem="LIH-Bg-iYs" secondAttribute="trailing" constant="60" id="tBQ-gO-MZn"/>
+                            <constraint firstItem="LIH-Bg-iYs" firstAttribute="top" secondItem="YdQ-g6-dYo" secondAttribute="bottom" constant="15" id="vmc-30-91D"/>
+                            <constraint firstItem="BBw-Ir-s2j" firstAttribute="leading" secondItem="YdQ-g6-dYo" secondAttribute="leading" id="yMo-Kp-Wgw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ajg-GL-3Iw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="089-Qa-XnD"/>
+                    <constraint firstItem="Ajg-GL-3Iw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7VO-qa-qnU"/>
+                    <constraint firstAttribute="bottom" secondItem="Ajg-GL-3Iw" secondAttribute="bottom" id="Jzw-XX-U34"/>
+                    <constraint firstAttribute="trailing" secondItem="Ajg-GL-3Iw" secondAttribute="trailing" id="hSI-jW-HMI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="blueProgreshBarAvragePercentage" destination="LIH-Bg-iYs" id="bLE-tb-cMz"/>
+                <outlet property="lblBlueAvrageShowPercentage" destination="yLB-fp-TnA" id="0SI-YZ-tmV"/>
+                <outlet property="lblChapterName" destination="YdQ-g6-dYo" id="PzP-kK-EhQ"/>
+                <outlet property="lblYelloFullShowPercentage" destination="hky-tj-1J2" id="od0-sA-oXx"/>
+                <outlet property="viewContentsSubXIB" destination="Ajg-GL-3Iw" id="hfY-gX-zsl"/>
+                <outlet property="yelloFullPercentageProgressBar" destination="BBw-Ir-s2j" id="3Xc-m3-8fG"/>
+            </connections>
+            <point key="canvasLocation" x="-52.898550724637687" y="55.580357142857139"/>
+        </tableViewCell>
+    </objects>
+</document>
